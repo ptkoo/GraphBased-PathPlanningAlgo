@@ -6,10 +6,13 @@ Practice project to master the concepts of path planning algorithms.
 
 This project involves creating a maze using Kruskal's algorithm. The maze is displayed using Pygame.
 
-### Define Constants
+### First we must think of how much do we want to set the width and height of the display 
 
-- `WIDTH` and `HEIGHT` of the frame:
-  ```python
-  WIDTH, HEIGHT = 600, 600
-  ROWS, COLS = 10, 10
-  CELL_SIZE = WIDTH // COLS
+**Determine Grid Length**: Set the grid length for the first row, first column, and so on. 
+
+```python
+for row in range(rows):
+    for col in range(cols):
+        x = col * cell_size
+        y = row * cell_size
+      
